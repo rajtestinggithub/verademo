@@ -16,7 +16,7 @@ jobs:
       - name: Veracode Upload And Scan
         uses: veracode/veracode-uploadandscan-action@0.2.11
         with:
-          appname: 'RRRTEST1'
+          appname: 'RRRTEST'
           createprofile: false
           filepath: 'app/target/verademo.war'
           vid: '8182c46d6381e81caf3b09e573145e1e'
