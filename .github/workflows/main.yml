@@ -14,15 +14,15 @@ jobs:
         run: mvn -B package --file app/pom.xml
           
       - name: Veracode Upload And Scan
-        uses: veracode/veracode-uploadandscan-action@0.2.7
+        uses: veracode/veracode-uploadandscan-action@0.2.11
         with:
           appname: 'RRRTEST1'
-          createprofile: true
+          createprofile: false
           filepath: 'app/target/verademo.war'
-          vid: '0bc7fda03726e57ce9b66dc59021bebc8c90afb130877c264e941ca4a0316baca00b46b21c87b95291494669b21d15f4d20abd145bd09d0d5ba975db8832fda2'
-          vkey: '${{ secrets.API_KEY }}'
-#          createsandbox: 'true'
-#          sandboxname: 'SANDBOXNAME'
+          vid: '8182c46d6381e81caf3b09e573145e1e'
+          vkey: '05b26fd4739f206a4f19b5772bfe3b50c029d9dc22ca1ffe56d18458d7e3a8be89c693f84b1d5c9b05dbfaf7dbecb6a5840e343686dbc137d21d80364a91656c'
+          createsandbox: 'true'
+          sandboxname: 'March11'
 #          scantimeout: 0
 #          exclude: '*.js'
 #          include: '*.war'
